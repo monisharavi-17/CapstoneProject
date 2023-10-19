@@ -1,0 +1,164 @@
+<!-- 
+
+<body>
+
+    <div>
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+          
+          <div class="row align-items-center">
+          <div class="col-6 col-xl-2">
+          <h1 class="mb-0 site-logo"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1>
+        </div>
+        <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link" id = "header">Home</a></li>
+             
+              <li><a href="#our-features" class="nav-link" id = "header">DASHBOARD</a> </li>
+          <button style="margin-left: 60%;" type="button" routerLink="/manageleads" class="btn btn-primary">BACK</button>
+          
+      </ul>
+  </nav>
+  </div>
+  </div>
+  </header>
+  </div>
+  <div style="display: flex;">
+      
+      <form #frm="ngForm" style="margin-top: 100px; display: inline-flex; flex-wrap: wrap; width: 800px;">
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Name:</label>
+            <input ngModel type="text" [(ngModel)]="name" id="name" placeholder="{{name}}" name="name" class="form-control" />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Email:</label>
+            <input ngModel type="text" [(ngModel)]="email" placeholder="{{email}}" name="email"  class="form-control" readonly />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Phone:</label>
+            <input ngModel type="text" [(ngModel)]="phone" placeholder="{{phone}}" name="phone"  class="form-control" />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Username:</label>
+            <input ngModel type="text" [(ngModel)]="username" placeholder="{{username}}" name="username" class="form-control" readonly />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Role:</label>
+            <input ngModel type="text" [(ngModel)]="role" placeholder="{{role}}" name="role"  class="form-control" readonly />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c">Password:</label>
+        <input ngModel type="text" [(ngModel)]="password" placeholder="{{password}}" name="password"  class="form-control" />
+    </div>
+    <button (click)="updateForm(frm)" style="margin-top: 0px;height: 10%; margin-left: 35%; " class="btn btn-primary "> Save Profile</button>
+</form>
+<div style="display:block ; margin-top: 10%;"  >
+   
+    <img style="margin-left: 0px; margin-bottom: 0%; border-radius: 100px; height: 200px; width: 200px;" src="{{filepath}}"
+    class="img-fluid" alt="Sample image">
+    <button style="margin-top: 0px;height: 10%; " class="btn btn-primary "> Update Image</button>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+</body> -->
+
+<div class="header1">
+    <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;height: 45px;"><a href=""><span class="text-primary"></span> </a></h1>
+    <img src="assets/4-removebg-preview (1).png" height="55">
+    <div class="header">
+        <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+        
+        <a href="#features" class="nav-link" id="header">Features</a> -->
+        <!-- <div class="btn1"> -->
+
+            <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+
+            <!-- <button type="button" style="position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary button112">LOGOUT</button> -->
+
+          <!-- </div> -->
+      
+        
+    </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="sidebar">
+          <button type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>{{peru|uppercase}}</button>
+          <ul>
+            <li style=""><a class="" routerLink="/userprofile"><fa-icon class="fav" [icon]="myhome"></fa-icon>Profile</a></li>
+            <li style=""><a class="" routerLink="/update"><fa-icon class="fav" [icon]="exporticon"></fa-icon>Password</a></li>
+            <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      
+
+    <!-- <div>
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+          
+          <div class="row align-items-center">
+          <div class="col-6 col-xl-2">
+          <h1 class="mb-0 site-logo"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1>
+        </div>
+        <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link" id = "header">Home</a></li>
+             
+              <li><a href="#our-features" class="nav-link" id = "header">DASHBOARD</a> </li>
+          <button style="margin-left: 60%;" type="button" routerLink="/manageleads" class="btn btn-primary">BACK</button>
+          
+      </ul>
+  </nav>
+  </div>
+  </div>
+  </header>
+  </div> -->
+  <div  class="mainco" style="display: flex;">
+    <button type="button" style="position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary button112">LOGOUT</button>
+
+      <h1 style="position: absolute;left: 40rem; top:7rem;font-weight: 600;">PROFILE</h1>
+      <form #frm="ngForm" class="forrm" style="margin-top: 100px; display: inline-flex; flex-wrap: wrap; width: 800px;">
+    
+        <div class="form3">
+            <label class="form-label" for="form3Example1c1">Name:</label>
+            <input id="form3Example1c1" ngModel type="text" [(ngModel)]="name"  placeholder="{{name}}" name="name"  class="form-control" />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c2">Email:</label>
+            <input id="form3Example1c2" ngModel type="text" [(ngModel)]="email" placeholder="{{email}}" name="email"    class="form-control" readonly />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c3">Phone:</label>
+            <input id="form3Example1c3" ngModel type="text" [(ngModel)]="phone" placeholder="{{phone}}" name="phone"   class="form-control" />
+        </div>
+        <div class="form3">
+            <label class="form-label" for="form3Example1c5">Username:</label>
+            <input id="form3Example1c5" ngModel type="text" [(ngModel)]="username" placeholder="{{username}}" name="username"   class="form-control" readonly/>
+        </div>
+        <!-- <div class="form3">
+            <label class="form-label" for="form3Example1c6">Password:</label>
+        <input ngModel type="text" id="form3Example1c6" name="name"  class="form-control" />
+    </div> -->
+    <button  (click)="updateForm(frm)" style="height: 15%;" class="btn btn-primary bttn"> Save Profile</button>
+   </form>
+
+<div style="display:block ; margin-top: 17%; margin-left: 1%;"  >
+    <img id="immg" style="margin-left: 0px; margin-bottom: 0%; border-radius: 100px; height: 180px; width: 180px;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/iconoir-team/iconoir/128/profile-circle-icon.png';"
+    class="img-fluid" alt="Sample image">
+    <input type="file" class="form-control" accept="image/*" (change)="onSelectFile($event)" style="height: 10%; margin-top: 8%;">
+    <button (click)=saveForm()  style="margin-top: 0px;height: 15%; margin-left: 15%; " class="btn btn-primary bttn "> Update Image</button>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+

@@ -1,0 +1,299 @@
+
+
+  <div>
+
+    <div class="header1">
+      <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%;"><a href="" style="color: white;">M2SOLUTIONS<span class="text-primary"></span> </a></h1> -->
+      <img src="assets/4-removebg-preview (1).png" alt="" height="50"> 
+      <div class="header">
+          <a  href="#home-section" class="nav-link" id = "header" style="color: white;">Home</a>
+          
+          <a href="#features" class="nav-link" id="header" style="color: white;">Features</a>
+          <div class="btn1">
+
+              
+              <button type="button" class="btn btn-secondary" id = "button"><a href="#s1" style="color: white;">ALREADY A USER?</a></button> 
+              
+              
+          </div>
+        
+          
+      </div>
+      </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section" style="background-color: rgb(23, 48, 91);">
+<!-- <section style="background-color: white; padding-top: 5%; background-image: url('assets/output-onlinepngtools (2).png');"> -->
+
+ <!-- <p style="text-align: center; position: absolute; top:15%">M2SOLUTIONS</p> -->
+
+  <!-- <div class="container h-100"> -->
+
+    <!-- <div class="row d-flex justify-content-center align-items-center h-100"> -->
+
+      <!-- <div class="col-lg-12 col-xl-11" style="background-color: red;"> -->
+
+        <!-- <div  style="border-radius: 25px;"> -->
+
+          <div class="card-body" style="box-shadow: 2px 2px solid red;">
+
+            <div id="singupup" class="card-body-inside">
+
+              <div id="signupform" class="">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style="color:rgb(43, 43, 165);">SIGN UP</p>
+  
+                <h1 *ngIf ="k; then e2 else e1"></h1>
+
+                <ng-template #e1>
+
+                          <form id="formss" class="mx-1 mx-md-4" #frm="ngForm" >
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <label class="form-label" for="form3Example1c">Your Name</label>
+                                <!-- <fa-icon class="fav" [icon]="usericon"></fa-icon> -->
+                                <input ngModel type="text" name="name" id="form3Example1c" class="form-control" />
+          
+                              </div>
+          
+                            </div>
+          
+          
+          
+                            <!-- <form method="dialog" #frm="ngForm" (submit) = "update(frm)"> -->
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <label class="form-label" for="form3Example3c">Your Email</label>
+          
+                                <input ngModel name = "email" type="email" id="form3Example3c" class="form-control"   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          
+                              </div>
+          
+                            </div>
+          
+                            <!-- </form> -->
+          
+          
+          
+                            <!-- <form method="dialog"> -->
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <label class="form-label" for="form3Example3c1">Your Phone Number</label>
+          
+                                <input ngModel name="phone" type="tel" id="form3Example3c1" pattern="[789][0-9]{9}" class="form-control" title="Please enter valid mobile number"/>
+          
+                              </div>
+          
+                            </div>
+          
+                            <!-- </form> -->
+          
+          
+          
+                              <!-- <form method="dialog" #frm="ngForm" (submit) = "update(frm)"> -->
+          
+                                <div class="d-flex flex-row align-items-center mb-4">
+          
+                                  <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+          
+                                  <div class="form-outline flex-fill mb-0">
+          
+                                    <label class="form-label" for="username">Username</label>
+          
+                                    <input ngModel name = "username" type="text" id="username" class="form-control">
+          
+                                  </div>
+          
+                                </div>
+          
+                                <!-- </form> -->
+          
+          
+          
+                            <!-- <form method="dialog"> -->
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <label class="form-label" for="form3Example4c3">Password</label>
+          
+                                <input ngModel name="password" type="password" id="form3Example4c3" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" title=" 8 or more characters">
+          
+                              </div>
+          
+                            </div>
+          
+                            <!-- </form> -->
+          
+          
+          
+                            <!-- <form method="dialog"> -->
+          
+                            <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <label class="form-label" for="form3Example4cd">Repeat your password</label>
+          
+                                <input ngModel name="confirmpassword" type="password" id="form3Example4cd" class="form-control" />
+          
+                              </div>
+          
+                            </div>
+          
+                            <!-- </form> -->
+          
+          
+          
+                            <!-- <div class="d-flex flex-row align-items-center mb-4">
+          
+                              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+          
+                              <div class="form-outline flex-fill mb-0">
+          
+                                <a href="">CLick Me to Generate Google Authenticator Id</a>
+          
+                                <input ngModel name="authcode" type="" id="form3Example4cd1" class="form-control" />
+          
+                              </div>
+          
+                            </div> -->
+
+                                
+
+                                  
+
+                                  <div class="form-check d-flex justify-content-center mb-5">
+
+                                    <!-- <mat-checkbox class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" (change) = "checkboxChanged($event)" [checked] = "true" /></mat-checkbox> -->
+                
+                                    <mat-checkbox class="form-check-label" for="form2Example3c" (change) = "checkboxChanged($event)" [checked] = "false">
+                
+                                      I agree all statements in <a style="color:blue; text-decoration: dashed;" (click)="terms()">Terms of service</a>
+                
+                                    </mat-checkbox>
+                
+                                  </div>
+                
+                
+                
+                                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                
+                                    <button (click) = "update(frm)" type="submit" style="height: 70%; background-color:rgb(35, 54, 108);color:white;" class="btn btn-primary btn-lg">Register</button>
+                
+                                  </div>
+                
+                
+                
+                                </form>
+                
+                
+                              </ng-template>
+                           <ng-template #e2>
+
+                             <div id="uploadpic" class="form-group">
+                               <label for="file" style="font-weight: 700; font-size: large;">Upload Your Profile Picture</label>
+                               <input type="file" class="form-control" accept="image/*" (change)="onSelectFile($event)" style="height: 100%; margin-top: 8%;">
+                              </div>
+                              <div style="margin-top: 10%; margin-bottom: 8%; margin-left: 30%;" class="form-group">
+                                
+                                <button type="submit" class="btn btn-info" (click)="saveForm()">Upload File</button>
+                                <button style="margin-left: 20%;" type="submit" (click)="skip()" class="btn btn-info">Skip</button>
+                              </div>
+                            </ng-template>
+                          </div>
+                  
+
+                 
+
+
+              <div  class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+
+
+                <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+
+                  class="img-fluid" alt="Sample image"> -->
+
+
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        <!-- </div> -->
+
+      <!-- </div> -->
+
+    <!-- </div> -->
+
+    <!-- </div> -->
+
+    
+
+</section>
+
+<!-- <button name="button" (click)="getdata1()">EMPLOYEE1</button> -->
+
+<!-- <ul>
+
+  <li *ngFor="let group of info">
+
+  {{group}}
+
+  <ul>
+
+      <li *ngFor="let light of group">
+
+      {{light}}
+
+      </li>
+
+  </ul>
+
+  </li>
+
+</ul> -->
+
+
+
+<!-- {{ frm.value | json }} -->
+
+      <router-outlet></router-outlet>

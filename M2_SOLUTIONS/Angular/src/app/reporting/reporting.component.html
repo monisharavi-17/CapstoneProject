@@ -1,0 +1,50 @@
+<div class="header1">
+    <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;height: 32px;"><a href=""><span class="text-primary"></span> </a></h1> -->
+    <img src="assets/4-removebg-preview (1).png" height="55">
+    <div class="header">
+        <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+        
+        <a href="#features" class="nav-link" id="header">Features</a> -->
+        <div class="btn1">
+
+          <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+
+          <button type="button" style="    position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
+
+        </div>
+      
+        
+    </div>
+    </div>
+  
+    <!-- vertical nav -->
+    <div class="wrapper">
+      <div class="sidebar">
+        <button routerLink="/userprofile" type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>{{peru|uppercase}}</button>
+        <ul>
+          <li style="background-color: lightgray;"><a class=""style="color:white"><fa-icon class="fav" [icon]="adminicon"></fa-icon>{{progress1}}</a></li>
+          <!-- <li style="cursor: pointer;"><a class="" (click)="newLead()"><fa-icon class="fav" [icon]="addleadicon"></fa-icon>Add Leads</a></li>
+          <li style="cursor: pointer;" ><a class="" (click)="generateLead()"><fa-icon class="fav" [icon]="generateleadicon"></fa-icon>Generate Leads</a></li>
+          <li style="cursor: pointer;"><a class="" routerLink="/importfile"><fa-icon class="fav" [icon]="importleadicon"></fa-icon>Import Leads</a></li>
+          <li style="cursor: pointer;"><a class="" href=""><fa-icon class="fav" [icon]="viewleadicon"></fa-icon>View Leads</a></li>
+          <li style="cursor: pointer;"><a class="" (click)="openDialog()"><fa-icon class="fav" [icon]="addadminicon"></fa-icon>Add Admin</a></li>
+          <li style="cursor: pointer;"><a class="" routerLink="/assignwork" ><fa-icon class="fav" [icon]="assignworkicon"></fa-icon>Assign Work</a></li> -->
+          <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">About</a></li> -->
+        </ul>
+      </div>
+    </div>
+ <div class="main">
+ 
+    <div class="chart-container11">
+      <h1 style="text-align: center;">Bar Chart</h1>
+       <canvas  id="MyChart" >{{ chart }}</canvas>
+    </div>
+    <hr>
+    <div class="chart-container11">
+      <h1 style="text-align: center;">Pie Chart</h1>
+       <canvas  id="MyChart1" >{{ chart1 }}</canvas>
+    </div> 
+ </div>

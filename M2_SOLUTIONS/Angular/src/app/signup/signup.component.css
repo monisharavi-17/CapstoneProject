@@ -1,0 +1,173 @@
+
+
+
+
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+
+  #header{
+      margin:0px 0px 0px 0px;
+      font-size: 20px;
+  }
+  .flex{
+      font-size: 50px;
+      display:flex;
+      margin-left: 70px;
+      /* width: 900px; */
+      color:black;
+  }
+  #flex1{
+      color: #131212;
+      font-weight: 600;
+      width:1400px;
+      margin-right:50px;
+      margin-top:100px;
+      display:flex;
+  }
+  .box{
+    display:block;
+    width:500px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 700px;
+  
+}
+.header1{
+  display: flex; 
+  padding-left: 4%;
+  width: 100%;
+  padding-top: 1%;
+  position: fixed;
+  background: linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+}
+
+.header{
+  display:flex;
+  margin-left: 5%;
+  /* margin-top:0.5% */
+}
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+
+  #button{
+      margin:2% 10% 0px 0px;
+      width: 30vh;
+      height: 6vh ;
+      
+  }
+  .btn1{
+    margin-top:0vh;
+    display: flex;
+    margin-left:50vh
+  }
+  #header{
+    margin:2% 10% 0% 0%;
+    font-size: 4vh;
+  }
+  #section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10%;
+    height: 50%;
+  }
+
+ 
+  #signupform
+  {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius:5%;
+    /* background:linear-gradient(rgba(127, 109, 127, 0), rgb(139, 118, 162)) */
+    background-color: white;
+    margin-top: 39%;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  } 
+  #uploadpic{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #formss{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .mb-4{
+    flex:40%
+  }
+  .card-body{
+    /* display: flex;
+    align-items: center;
+    justify-self: center;*/
+    width: 60%;
+    
+  }
+  #signupup{
+    align-items: center;
+    justify-content: center;
+  }
+  .form-label{
+    text-shadow: 2px 2px 4px #f4f3f3;
+    font-size: large;
+  }
+  #form3Example1c{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/fatcow/farm-fresh/32/define-name-icon.png") no-repeat left;
+    background-size: 25px;
+  }
+  #form3Example3c{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/32/Mail-icon.png") no-repeat left;
+    background-size: 25px;
+  }
+  #form3Example3c1{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/iconsmind/outline/128/Phone-2-icon.png") no-repeat left;
+    background-size: 25px;
+  }
+  #username{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/hopstarter/soft-scraps/128/Text-Edit-icon.png") no-repeat left;
+    background-size: 25px;
+  } 
+  #form3Example4c3{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/icons8/ios7/128/User-Interface-Password-icon.png") no-repeat left;
+    background-size: 25px;
+  }
+  #form3Example4cd{
+    padding-left: 10%;
+    background: url("https://icons.iconarchive.com/icons/iconsmind/outline/128/Mail-Password-icon.png") no-repeat left;
+    background-size: 25px;
+  }
+  /*  */
+
+
+ 

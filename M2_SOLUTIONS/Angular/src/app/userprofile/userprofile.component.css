@@ -1,0 +1,212 @@
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+
+  #header{
+      margin:0px 0px 0px 0px;
+      font-size: 20px;
+  }
+  .flex{
+      font-size: 50px;
+      display:flex;
+      margin-left: 70px;
+      /* width: 900px; */
+      color:black;
+  }
+  #flex1{
+      color: #131212;
+      font-weight: 600;
+      width:1400px;
+      margin-right:50px;
+      margin-top:100px;
+      display:flex;
+  }
+  .box{
+    display:block;
+    width:500px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 700px;
+  
+}
+.header1{
+  display: flex; 
+  padding-left: 4%;
+  width: 100%;
+  padding-top: 0%;
+  position: fixed;
+  background: linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+}
+
+.header{
+  display:flex;
+  margin-left: 5%;
+  /* margin-top:0.5% */
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+  padding-top: 5.2%;
+}
+.wrapper .sidebar{
+  position:fixed;
+  width: 24%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+  padding: 30px 0px;
+
+}
+.wrapper .sidebar button{
+  color:#ffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 70%;
+  margin-left: 15%;
+  background:none;
+  border-radius: 10px;
+  font-size:xx-large;
+  height: 8%;
+  border: none;
+}
+.wrapper .sidebar button:hover{
+  background: #888888;
+}
+.fav{
+  margin-right: 4%;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(225,0,0,0.05);
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 12%;
+  font-size: 170%;
+}
+
+.wrapper .sidebar ul li a{
+  color:#bdb8d7;
+  display: block;
+  text-decoration: none;
+}
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+.wrapper .sidebar ul li:hover{
+  background-color: #b3b3b3;
+}
+.wrapper .sidebar ul li:hover a{
+  color: #ffff;
+}
+.mainco{
+  margin-left: 30%;
+}
+  #button{
+      margin:0px 0px 0px 300px;
+      font-weight: 500px;
+      
+  }
+  #header{
+      margin:0px 0px 0px 0px;
+      font-size: 20px;
+  }
+.form3{
+    width: 35%;
+    /* margin-right: 10%; */
+    flex: 50%; 
+    padding-bottom: 5%;
+    
+    
+}
+.form-control{
+    width: 90%;
+  }
+.bttn{
+  margin-top: 5%;height: 10%; margin-left: 35%; 
+  background:linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+  color:white;
+} 
+.forrm{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 4%;
+  border: 10px solid rgb(19, 36, 85);
+  border-radius: 5%;
+}
+#form3Example1c1{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/fatcow/farm-fresh/32/define-name-icon.png") no-repeat left;
+  background-size: 25px;
+}
+#form3Example1c2{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/128/Mail-icon.png") no-repeat left;
+  background-size: 25px;
+}
+#form3Example1c3{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/graphicloads/100-flat/128/phone-call-icon.png") no-repeat left;
+  background-size: 25px;
+}
+#form3Example1c4{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/custom-icon-design/mono-business/128/company-building-icon.png") no-repeat left;
+  background-size: 25px;
+}
+#form3Example1c5{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/fatcow/farm-fresh/32/role-icon.png") no-repeat left;
+  background-size: 25px;
+}
+/* #form3Example1c6{
+  padding-left: 10%;
+  background: url("https://icons.iconarchive.com/icons/fatcow/farm-fresh/32/define-name-icon.png") no-repeat left;
+  background-size: 25px;
+} */
+/* #button11 {
+  margin-left: 40rem;
+  height: fit-content;
+  margin-top: 2%;
+  background-color: rgba(99, 135, 227, 0.9) !important;
+
+} */
+
+.button112{
+
+  margin-left: 42rem;
+
+  height: fit-content;
+
+  margin-top: 1%;
+
+  background-color: rgba(99, 135, 227, 0.9) !important;
+
+
+
+}
+
+.button112:hover{
+
+  margin-left: 42rem;
+
+  height: fit-content;
+
+  margin-top: 1%;
+
+  background-color: white !important;
+
+  color:black;
+
+
+
+}
+
+ 
