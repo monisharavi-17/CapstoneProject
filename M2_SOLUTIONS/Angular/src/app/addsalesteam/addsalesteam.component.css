@@ -1,0 +1,41 @@
+input{
+    
+    border:none;
+    border-bottom: 1px solid #040405;
+    padding: 5px 10px;
+    outline: none;
+ }
+
+ input:focus {
+    border-color: green;
+    outline: 1px dotted #000
+  }
+
+  h2{
+   
+  }
+  div{
+    padding-bottom: 20px;
+  }
+  label{
+    font-size: large;
+    padding-bottom: 10px;
+  }
+  button{
+    background-color: rgb(150, 197, 226);
+    justify-content: center;
+    align-items: center;
+  }
+  html{
+    background-color: blue;
+  }
+  .container1 h2{
+    text-align: center;
+    color: rgb(248, 245, 245);
+    padding: 10px;
+    background-image: url("src/assets/pexels-fwstudio-172289.jpg");
+    background-size: cover;
+  }
+  form{
+    padding: 5%;
+  }

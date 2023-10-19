@@ -1,0 +1,23 @@
+#title
+{
+    text-align: center;
+    padding-top: 5%;
+    
+    background-size: cover;
+    color:white;
+}
+#title h2{
+    font-weight: 600;
+}
+#dropdown
+{
+    margin-left:5%;
+    font-size: large;
+}
+#industry{
+    margin-top: 5%;
+}
+#button{
+    margin-top:10%;
+    margin-left: 40%;
+}

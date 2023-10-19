@@ -1,0 +1,247 @@
+<!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="margin:0px">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="" alt="Bootstrap" width="30" height="24">
+      </a>
+      <a class="navbar-brand" >
+        <img src="assets\usericon.jpg" routerLink="/userprofile" alt="usericon" width="30" height="24">
+      </a>
+    </div>
+  
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style = "margin-bottom: 50px;margin-top: 30px;">
+   
+    
+    <button (click)="newLead()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">New</button>
+    <button (click)="generateLead()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Generate leads</button>
+    <button routerLink="/importfile" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Import leads</button>
+    <div *ngIf="role1 then e2"></div>
+    <ng-template #e2>
+      <button routerLink="/manageleads" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">View leads</button>
+    </ng-template>
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style = "margin-bottom: 50px;margin-top: 30px;">
+    <h1 style = "margin-left: 20px">Sales Department</h1>
+    
+    <button (click) ="openDialog2()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add Sales Team</button>
+    <button (click)="openDialog1()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add Sales Person</button>
+    <button routerLink="/assignteamwork" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Assign work</button>
+</nav>
+
+  <div id="container">
+  <ul style="list-style-type: none">
+    <li *ngFor="let i of datas ">
+        <div class="card" style="width: 76rem"  id="super" style="margin-bottom: 30px;margin-right: 20px;" >
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <img src="assets\team_logo.jpg" alt="..." width="100" height="100" style="margin-left :50px;" >
+            
+            <a  (click)="teammembers(i)" class="btn btn-primary" style="margin-left :300px;">{{i}}</a>
+            <a (click)="geteamid(i)" routerLink="/teamleads" class="btn btn-primary" style="margin-left :450px;">Progress</a>
+          </nav> 
+            
+        </div>
+          
+    </li>
+    <br><br><br>
+  </ul>
+  </div>
+  <router-outlet></router-outlet>
+ -->
+
+ <!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="margin:0px">
+
+ 
+
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+
+      <img src="" alt="Bootstrap" width="30" height="24">
+
+    </a>
+
+    <a class="navbar-brand" >
+
+      <img src="assets\usericon.jpg" alt="usericon" width="30" height="24">
+
+    </a>
+
+  </div>
+
+
+
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style = "margin-bottom: 50px;margin-top: 30px;">
+
+ 
+
+ 
+
+  <button (click)="newLead()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">New</button>
+
+  <button (click)="generateLead()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Generate leads</button>
+
+  <button name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Import leads</button>
+
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style = "margin-bottom: 50px;margin-top: 30px;">
+
+  <h1 style = "margin-left: 20px">Sales Department</h1>
+
+ 
+
+  <button (click) ="openDialog2()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add Sales Team</button>
+
+  <button (click)="openDialog1()" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add Sales Person</button>
+
+  <button name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Assign work</button>
+
+</nav>
+
+
+
+<div id="container">
+
+<ul style="list-style-type: none">
+
+  <li *ngFor="let i of datas ">
+
+      <div class="card" style="width: 76rem"  id="super" style="margin-bottom: 30px;margin-right: 20px;" >
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+          <img src="assets\team_logo.jpg" alt="..." width="100" height="100" style="margin-left :50px;" >
+
+         
+
+          <a (click)="teammembers()" class="btn btn-primary" style="margin-left :300px;">{{i}}</a>
+
+          <a  class="btn btn-primary" style="margin-left :450px;">Progress</a>
+
+        </nav>
+
+         
+
+      </div>
+      
+      
+      
+    </li>
+    
+    <br><br><br>
+    
+  </ul>
+  
+  <button routerLink="/leaddetails" type="button">leaddetails</button>
+</div>
+
+<router-outlet></router-outlet> -->
+
+<div class="header1">
+  <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white; height: 32px;"><a href=""><span class="text-primary"></span> </a></h1> -->
+  <img src="assets/4-removebg-preview (1).png" height="55">
+  <div class="header">
+      <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+      
+      <a href="#features" class="nav-link" id="header">Features</a> -->
+      <div class="btn1">
+        <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+        <button type="button" style="    position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
+      </div>
+      
+  </div>
+  </div>
+
+  <!-- vertical nav -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <button type="button" routerLink="/userprofile"><fa-icon class="fav" [icon]="snow"></fa-icon>CEO</button>
+      <ul>
+        <li style="background-color: lightgray;"><a class="" style="color: white;"><fa-icon class="fav" [icon]="teamicon"></fa-icon>Teams</a></li>
+        <li style="cursor: pointer;"><a class="" (click)="newLead()"><fa-icon class="fav" [icon]="addleadicon"></fa-icon>Add Leads</a></li>
+        <li style="cursor: pointer;"><a class="" (click)="generateLead()"><fa-icon class="fav" [icon]="generateleadicon"></fa-icon>Generate Leads</a></li>
+        <li style="cursor: pointer;"><a class="" routerLink="/importfile"><fa-icon class="fav" [icon]="importleadicon"></fa-icon>Import Leads</a></li>
+        <!-- <li style="cursor: pointer;"><a class="" routerLink="/manageleads" ><fa-icon class="fav" [icon]="viewleadicon"></fa-icon>View Leads</a></li> -->
+        <li style="cursor: pointer;"><a class="" (click)="openDialog2()"><fa-icon class="fav" [icon]="addadminicon"></fa-icon>Add Team</a></li>
+        <li style="cursor: pointer;"><a class="" (click)="openDialog1()"><fa-icon class="fav" [icon]="empicon"></fa-icon>Add Employee</a></li>
+        <li style="cursor: pointer;"><a class=""  routerLink="/assignteamwork" ><fa-icon class="fav" [icon]="assignworkicon"></fa-icon>Assign Work</a></li>
+        <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">About</a></li> -->
+      </ul>
+    </div>
+  </div>
+  
+   
+    <div id="flexbox">
+
+      <!-- <div class="aboutcompany">
+        <div class="forbackground">
+          
+          <h2 id="abouth2">A great opera house isn't run by a director, but by a great administrator.</h2>
+         
+            <button (click)="newLead()" name="button" id="butoons" class="btn btn-outline-dark" style="margin-left: 20px;">New</button>
+            
+            <button  name="button" id="butoons" class="btn btn-outline-dark" style="margin-left: 20px;">Generate leads</button>
+            
+            <button routerLink="/importfile" name="button" id="butoons" class="btn btn-outline-dark" style="margin-left: 20px;">Import leads</button>
+            <button  routerLink="/" name="button" id="butoons" class="btn btn-outline-dark" style="margin-left: 20px;">View leads</button>
+          </div>
+        </div> -->
+
+        <div class="teamslist">
+          
+          <h2 id="teamlist" style="text-align: center;">Teams of {{Name}}</h2>
+          <div style="display: flex;">
+            <!-- <button name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add Teams</button>
+    
+            <button routerLink="/assignwork" name="button" id="button" class="btn btn-outline-dark" style="margin-left: 20px; width: 200px;">Assign work</button> -->
+    
+          </div>
+          <div id="content">
+
+            <!-- <div id="insidecontent" *ngFor="let i of datas ">
+              
+              <div class="card1" id="super">
+                <a id="fuse" (click)="teammembers()" class="btn btn-primary">{{i}}</a>
+                <button id="fuse1" type="button" class="btn btn-outline-info"><img src="https://icons.iconarchive.com/icons/praveen/minimal-outline/16/view-icon.png" width="16" height="16"></button>
+                
+              </div>
+              
+            </div> -->
+            <table id="customers">
+              <tr>
+                <th style="width: 25rem; background-image: url('assets/pexels-fwstudio-172289.jpg'); background-size: cover; color:white">Team Name</th>
+                <th style="background-image: url('assets/pexels-fwstudio-172289.jpg'); background-size: cover; color:white">Progress</th>
+              </tr>
+              <tr *ngFor="let i of datas">
+                <td><button (click)="printteammembers(i)" id="databutton" type="button">{{i}}</button></td>
+                <td> <button (click)="geteamid(i)" routerLink="/teamleads" type="button" class="btn btn-outline-info"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Actions-arrow-right-double-icon.png" width="16" height="16"></button></td>
+              </tr>
+              <tr>
+             </table>   
+          </div>
+        </div>
+        <div id="teampopup">
+        <div id="whitecard">
+          <h2 style="background-image: url('assets/pexels-fwstudio-172289.jpg'); background-size: cover; color:white" >TEAM MEMBERS</h2>
+          <!-- <hr> -->
+          <div id="ngfor" *ngFor="let i of teamMembers">
+            <p id="names">{{i}}</p>
+        </div>
+
+        </div>
+        
+        </div>
+        
+      </div>
+  
+
+ 
+
+
+

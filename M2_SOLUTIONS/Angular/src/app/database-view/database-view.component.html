@@ -1,0 +1,72 @@
+<div class="header1">
+  
+  <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1> -->
+  <img src="assets/4-removebg-preview (1).png" height="66">
+  <div class="header">
+      <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+      
+      <a href="#features" class="nav-link" id="header">Features</a> -->
+      <div class="btn1">
+
+        <input type="image" routerLink="/profile" style="position: absolute; right: 3%; width: 4%; top: 7%;" src="https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png"/>
+
+        <button type="button" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
+        
+          
+          
+      </div>
+    
+      
+  </div>
+  </div>
+
+  <!-- vertical nav -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <button routerLink="/profile" type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>CEO</button>
+      <ul>
+        <li style="background-color: lightgray;"><a class="" style="color: white;"><fa-icon class="fav" [icon]="myhome"></fa-icon>Databases</a></li>
+        <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">About</a></li> -->
+      </ul>
+    </div>
+  </div>
+  
+<div class="content">
+   <div id="text">
+
+     <h2 id="texth1">{{texth1}}</h2>
+     <p id="textp">{{textp}}</p>
+    </div>
+  
+  <div id="buttoncreate">
+    
+    
+    <button name="button" routerLink="/createdatabase" class="btn btn-outline-dark">Add Database</button>
+    
+  </div>
+  
+  <div id="container1list">
+    
+    <ul id="container2list" style="list-style-type: none">
+      
+      <li class="card" *ngFor="let j of datas ">
+        
+        <div style="width: 18rem" >
+          <!-- <img src="assets\cmp.png" alt="..." width="100" height="100"> -->
+          <div class="card-body">
+            <h5 class="card-title">{{j}}</h5>
+            <a  id="connectbutton" class="btn btn-primary" routerLink="/admins"type="button" (click)="connecttodatabase(j)">Go to Database</a>
+          </div>          
+        </div>
+        <div>
+          <img src="assets/connect.png" width="200px" height="200px">
+        </div>
+      </li>
+</ul>
+
+</div>
+
+</div>

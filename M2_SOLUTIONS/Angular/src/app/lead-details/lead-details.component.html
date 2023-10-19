@@ -1,0 +1,221 @@
+<!-- <body>
+
+    
+  <div style="margin-top: 100px; margin-bottom: 5px;" >
+      <button type="button" class="btn btn-primary" style="background-color: rgb(210, 183, 147);">Delete Lead</button>
+  </div>
+  
+  <div style="display: flex;">
+  <div class="card" style="width:75%;">
+      <div class="card-header">
+        Lead Details
+      </div>
+      <div class="card-body">
+        <h4 class="card-title" style="text-align: center;">{{uses?.lcmpname}}</h4>
+        <h5 class="card-text">DESCRIPTION</h5>
+        <textarea id="w3review" name="w3review" rows="5" cols="110">
+         {{uses?.requirement}}
+          </textarea>
+        <div style="display: flex; margin-top: 10px; margin-bottom: 30px;">  
+          <div class="card-text" style="display: flex; margin-right: 430px;">
+                      <h5 style="margin-right:20px;">Email:</h5>
+                      <p> {{uses?.lemail}}  </p>
+          </div>
+          <div class="card-text" style="display: flex;">
+              <h5 style="margin-right:20px ;">Phone:</h5>
+              <p>{{uses?.lphonenumber}}</p>
+          </div>
+         </div>
+         <div style="display: flex; margin-bottom: 30px;">
+           <div class="card-text" style="display: flex; margin-right: 473px;">
+               <h5 style="margin-right:20px ;">Viewed by:</h5>
+              <p> {{uses?.salesperson}} </p>
+          </div>
+          <div class="card-text" style="display: flex;">
+          <h5 style="margin-right:20px ;">Stage:</h5>
+          <p> {{uses?.stage}} </p>
+          </div>       
+          </div>
+          <a  class="btn btn-primary" style="background-color: rgb(211, 183, 148); margin-right: 30px;">Shedule Meeting</a>
+          <a (click)="getinputlog()" class="btn btn-primary" style="background-color: rgb(211, 183, 148);">Add Log</a>
+      </div>
+    </div>
+    <div style="margin: 5%; display:grid; grid-gap: 10px;">
+
+      <p *ngIf="ifs; then nonadmin"></p>
+  
+      <ng-template #nonadmin>
+  
+        <h4>CHANGE STATE</h4>
+  
+        <button type="button" (click)="newlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700;">New</button>
+  
+        <button type="button" (click)="qualifiedlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Qualified</button>
+  
+        <button type="button" (click)="prepositionlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Proposition</button>
+  
+        <button type="button" (click)="negotiationlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Negotiation</button>
+  
+        <button type="button" (click)="wonlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Won</button>
+  
+      </ng-template>
+  
+   
+  
+    </div>
+  
+  </div>
+  
+  
+  <div style="margin-top: 70px;">
+       <h4 style="">LOGS Of Leadname</h4>
+
+        <div *ngFor="let group of Logdetails">
+
+ 
+
+          <p><b>{{group.timestamp|date:'medium'}}</b></p>
+   
+          <p *ngIf="group.type; then e2 else e1"></p>
+   
+          <ng-template #e1>
+   
+           <p><b>{{group.salesman}} Added a log </b></p>
+   
+         </ng-template>
+   
+          <ng-template #e2>
+   
+            <p><b>{{group.salesman}}</b> changed from  <b>{{group.stagebefore}}</b> to <b>{{group.stageafter}}</b></p>
+   
+         </ng-template>
+   
+         <p id="innerlog"></p>
+   
+   
+           <p><b>Log Message: </b>{{group.log}}</p>
+   
+           <hr style="margin-right: 40px;">
+   
+        </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+  </body>
+  
+   -->
+   <div class="header1">
+    <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;height: 45px;"><a href=""><span class="text-primary"></span> </a></h1> -->
+    <img src="assets/4-removebg-preview (1).png" height="66">
+    <div class="header">
+        <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+        
+        <a href="#features" class="nav-link" id="header">Features</a> -->
+        <div class="btn1">
+
+          <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+
+          <button type="button" style="    position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
+
+        </div>
+      
+        
+    </div>
+    </div>
+  
+  <div class="mainc">
+    <!-- <h1 class="mb-0 site-logo" style="margin: 20px; margin-left: 40px; font-size: 200%;"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1> -->
+  <!-- <div style="margin-top: 100px; margin-bottom: 5px;" >
+      <button type="button" class="btn btn-primary" style="background-color: rgb(210, 183, 147);">Delete Lead</button>
+  </div> -->
+  
+  <div class="cardab" style="display: flex;">
+    <div class="cardss">
+      
+      <div class="card-header">
+        Lead Details
+      </div>
+      <div class="card1">
+        <div class="card-body">
+          <h4 class="card-title" style="text-align: center; font-size: x-large;">{{uses?.lcmpname}}</h4>
+          <h5 class="card-text">DESCRIPTION:</h5>
+          <textarea id="w3review" name="w3review" rows="5" cols="110">
+          {{uses?.requirement}}   </textarea>
+        <div style="display: flex; margin-top: 10px; margin-bottom: 30px;">  
+          <div class="card-text" style="display: flex; margin-right: 330px;">
+                      <h5 style="margin-right:20px;font-size: larger;">Email:</h5>
+                      <p> {{uses?.lemail}} </p>
+                    </div>
+                    <div class="card-text" style="display: flex;">
+                      <h5 style="margin-right:20px;font-size: larger;">Phone:</h5>
+                      <p>{{uses?.lphonenumber}} </p>
+                    </div>
+                  </div>
+                  <div style="display: flex; margin-bottom: 30px;">
+                    <div class="card-text" style="display: flex; margin-right: 386px;">
+                      <h5 style="margin-right:20px;font-size: larger;">Viewer:</h5>
+                      <p> {{uses?.salesperson}} </p>
+                    </div>
+                    <div class="card-text" style="display: flex;">
+                      <h5 style="margin-right:20px;font-size: larger;">Stage:</h5>
+                      <p> {{uses?.stage}} </p>
+                    </div>       
+                  </div>
+                  <a  class="btn btn-primary" (click)="schedule()" style="background:linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9)); margin-right: 30px;">Schedule Meeting</a>
+                  <a (click)="getinputlog()" class="btn btn-primary" style="background:linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));">Add Log</a>
+                </div>
+              </div>
+            </div>
+            <p *ngIf="ifs; then nonadmin"></p> 
+            <ng-template #nonadmin>
+              <div class="changestate" style="">
+                  <h1>CHANGE STATE</h1>
+        <button id="abc" type="button" (click)="newlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700;">New</button>
+        <button id="abc" type="button" (click)="qualifiedlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Qualified</button>
+        <button id="abc" type="button" (click)="prepositionlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Proposition</button>
+        <button id="abc" type="button" (click)="negotiationlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Negotiation</button>
+        <button id="abc" type="button" (click)="wonlog()" class="btn btn-primary" style="background-color: rgb(180, 222, 168); font-weight: 700">Won</button>
+      </div>
+      </ng-template>
+  
+  
+  </div>
+  
+  
+  <h4 style="margin-top: 70px;"><b>LOGS Of Leadname</b></h4>
+  <div class="logbox" >
+       <hr class="hr-text gradient" data-content="Log">
+       <!-- <p id ="timestamp">{{datetime|date:'medium'}}</p>
+       <p id="person"></p>
+       <p id="before"></p>
+       <p id="after"></p>
+       <p id="details">{{Logmessage}}</p>
+       <p *ngIf="ifs; then e1"></p>
+  
+       <ng-template #e1>
+          <hr style="margin-right: 40px;">
+        </ng-template> -->
+       
+       <div *ngFor="let group of Logdetails">
+  
+         <p><b>{{group.timestamp|date:'medium'}}</b></p>
+         <p *ngIf="group.type; then e2 else e1"></p> 
+         <ng-template #e1>
+          <p><b>{{group.salesman}} Added a log </b></p>
+        </ng-template> 
+         <ng-template #e2>
+           <p><b>{{group.salesman}}</b> Changed the state from <b>{{group.stagebefore}}</b> to <b>{{group.stageafter}}</b></p> 
+        </ng-template> 
+        <p id="innerlog"></p>
+          <!-- <p>{{group.stagebefore}}</p>
+          <p>{{group.stageafter}}</p> -->
+          <p><b>Log Message: </b>{{group.log}}</p>
+          <hr class="hr-text gradient" data-content="Log">
+       </div>
+  </div>
+  <!-- <button (click)="randomSite()"></button> -->
+  </div>
+  <router-outlet></router-outlet>
+  
+  
+  

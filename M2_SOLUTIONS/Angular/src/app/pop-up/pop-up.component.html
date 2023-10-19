@@ -1,0 +1,210 @@
+<!-- <div class="form-body" style="overflow-y: hidden;">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3 style="text-align: center;">Add New Admin</h3>
+                    
+                    <form class="requires-validation" novalidate #frm="ngForm">
+  
+                        <div class="col-md-12">
+                           <input ngModel class="form-control" type="text" name="name" placeholder="Full Name" required>
+                           <div class="valid-feedback">Username field is valid!</div>
+                           <div class="invalid-feedback">Username field cannot be blank!</div>
+                        </div>
+  
+                        <div class="col-md-12">
+                            <input ngModel class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                             <div class="valid-feedback">Email field is valid!</div>
+                             <div class="invalid-feedback">Email field cannot be blank!</div>
+                        </div>
+  
+                        <div class="col-md-12">
+                            <input ngModel class="form-control" type="text" name="phone" placeholder="Enter Phone Number" required>
+                             <div class="valid-feedback"></div>
+                             <div class="invalid-feedback"></div>
+                        </div>
+  
+                       
+  
+  
+                       <div class="col-md-12">
+                          <textarea ngModel rows="4" cols="50" style="margin-top: 10px;" name="address" placeholder="Address"></textarea>
+                          
+                       </div>
+  
+                       <div class="col-md-12 mt-3">
+                          <label class="mb-3 mr-1" for="gender" s>Gender: </label>
+    
+                          <input type="radio"  class="btn-check" name="gender" id="male" value="Male" autocomplete="off" required [(ngModel)]='gender'>
+                          <label style="margin-right: 10px; margin-left: 50px;" value="Female" class="btn btn-sm btn-outline-secondary" for="male" >Male</label>
+    
+                          <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required [(ngModel)]='gender'>
+                          <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+                          </div>
+  
+                        <div class="col-md-12" style="display: flex;">
+                           <label style="margin-top: 10px; width: 130px;">Create a New Username</label>
+                          <input ngModel style="" class="form-control" type="text" name="uname" placeholder="Username" required>
+                    
+                      </div>
+                        <div class="col-md-12" style="display: flex;">
+                           <label style="margin-top: 10px; width: 130px;">One-time login code</label>
+                          <input ngModel style="" class="form-control" type="text" name="code" placeholder="Login Code" required>
+                    
+                      </div>
+  
+  
+                       
+  
+                        
+  
+                        <div class="form-button mt-3">
+                            <button (click)="createAdmin(frm)" id="submit" type="submit" class="btn btn-primary">Add Admin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+   -->
+
+   <h1 *ngIf ="k; then e2 else e1"></h1>
+
+   <ng-template #e1>
+   <div class="form-body" style="overflow-y: hidden;">
+   
+       <div class="row">
+   
+           <div class="form-holder" style="background-image: url('assets/pexels-engin-akyurt-1435752.jpg')">
+   
+               <div class="form-content">
+   
+                   <div class="form-items">
+   
+                       <h3 style="text-align: center;">Add New Admin</h3>
+   
+                       <!-- <p>Fill in the data below.</p> -->
+   
+                       <form class="requires-validation" novalidate #frm="ngForm">
+   
+    
+   
+                           <div class="col-md-12" style="display: flex;">
+                               <label for="name" style="margin-top: 20px; width: 130px;">Name: </label>
+                              <input ngModel class="form-control" type="text" name="name" placeholder="Full Name" required>
+   
+                           </div>
+   
+    
+   
+                           <div class="col-md-12" style="display: flex;">
+                               <label for="email" style="margin-top: 20px; width: 130px;">Email: </label>
+                               <input ngModel class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                           </div>
+   
+    
+   
+                           <div class="col-md-12" style="display: flex;">
+                               <label for="phone" style="margin-top: 10px; width: 130px;">Phone number:</label>
+                               <input ngModel class="form-control" type="text" name="phone" placeholder="Enter Phone Number" required>
+   
+                           </div>
+   
+    
+   
+                          
+   
+    
+   
+    
+   
+                          <div class="col-md-12" style="display: flex;">
+                           <label for="address" style="margin-top: 20px; width: 130px;">Address:</label>
+                             <textarea ngModel rows="4" cols="50" style="margin-top: 10px;" name="address" placeholder="Address"></textarea>
+   
+                          </div>
+   
+    
+   
+                          <div class="col-md-12 mt-3" style="display: flex;">
+   
+                             <label class="mb-3 mr-1" for="gender" s>Gender: </label>
+                             <input type="radio"  class="btn-check" name="gender" id="male" value="Male" autocomplete="off" required [(ngModel)]='gender'>
+   
+                             <label style="margin-right: 10px; margin-left: 50px;" value="Female" class="btn btn-sm btn-outline-secondary" for="male" >Male</label>
+   
+      
+   
+                             <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required [(ngModel)]='gender'>
+   
+                             <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+   
+                             </div>
+   
+    
+   
+                           <div class="col-md-12" style="display: flex;">
+   
+                              <label style="margin-top: 10px; width: 130px;">Create a New Username</label>
+   
+                             <input ngModel style="" class="form-control" type="text" name="uname" placeholder="Username" required>
+   
+                      
+   
+                         </div>
+   
+                           <div class="col-md-12" style="display: flex;">
+   
+                              <label style="margin-top: 10px; width: 130px;">One-time login code</label>
+   
+                             <input ngModel style="" class="form-control" type="text" name="code" placeholder="Login Code" required>
+   
+                      
+   
+                         </div>
+   
+    
+   
+    
+   
+                          
+   
+    
+   
+                          
+   
+    
+   
+                           <div class="form-button mt-3">
+   
+                               <button (click)="createAdmin(frm)" id="submit" type="submit" class="btn btn-primary">Add Admin</button>
+   
+                           </div>
+   
+                       </form>
+   
+                   </div>
+   
+               </div>
+   
+           </div>
+   
+       </div>
+   
+     </div>
+   
+   </ng-template>
+   
+   <ng-template #e2>
+       <div class="form-group" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+           <label for="file" style="font-weight: 700; font-size: large;">Upload Admin's Photo</label>
+           <input type="file" class="form-control" accept="image/*" (change)="onSelectFile($event)" style="height: 100%; margin-top: 8%;">
+          </div>
+          <div style="margin-top: 10%;" class="form-group">
+            
+            <button type="submit" class="btn btn-info" (click)="saveForm()">Upload File</button>
+            <button style="margin-left: 20%;" type="submit" (click)="skip()" class="btn btn-info">Skip</button>
+          </div>
+   </ng-template>    

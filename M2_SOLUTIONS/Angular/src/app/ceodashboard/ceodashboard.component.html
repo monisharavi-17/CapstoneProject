@@ -1,0 +1,41 @@
+<div class="header1">
+  <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%;"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1>
+  <div class="header">
+      <a  href="#home-section" class="nav-link" id = "header">Home</a>
+      
+      <a href="#features" class="nav-link" id="header">Features</a>
+      <div class="btn1">
+
+          
+          <button type="button" class="btn btn-primary" id = "button"><a style="color: white;">ALREADY A USER?</a></button> 
+          
+          
+      </div>
+    
+      
+  </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <h1 >Data Bases</h1>
+    <button name="button" routerLink="create" id="button" class="btn btn-outline-dark">Create</button>
+  </nav>
+  <div id="container">
+  <ul style="list-style-type: none">
+    <li *ngFor="let i of names ; let j of databases ">
+        <div class="card" style="width: 18rem" >
+            <img src="assets\cmp.png" alt="..." width="100" height="100">
+            <div class="card-body">
+              <h5 class="card-title">{{j}}</h5>
+              
+              <a  class="btn btn-primary" type="button" (click)="saveStudent()">Go to Database</a>
+              <!-- <li *ngFor="let i of students">
+                {{i.student_id}}---{{i.student_name}}--{{i.student_email}}
+              </li> -->
+            </div>
+        </div>
+          
+    </li>
+    <br><br><br>
+</ul>
+</div>
+<router-outlet></router-outlet>

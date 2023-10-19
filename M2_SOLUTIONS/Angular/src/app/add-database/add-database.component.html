@@ -1,0 +1,153 @@
+<!-- <div>
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+        <div class="row align-items-center">
+        <div class="col-6 col-xl-2">
+        <h1 class="mb-0 site-logo"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1>
+        </div>
+        <div class="col-12 col-md-10 d-none d-xl-block">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+        <li><a href="#home-section" class="nav-link" id = "header">Home</a></li>
+       
+        <li><a href="#our-features" class="nav-link" id = "header">Our Features</a> </li>
+    </ul>
+</nav>
+</div>
+<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+</div>
+</div>
+</header>
+</div>
+
+    <div class="register-photo" >
+        <div class="form-container" style="margin-top:30px ;">
+            <div class="image-holder"></div>
+            <form method="dialog" #frm="ngForm">
+                <h2 class="text-center"><strong>Create</strong> a Database.</h2>
+                <div class="form-group"><input class="form-control" type="text" ngModel name="name" placeholder="Name"></div>
+                <div class="form-group"><input class="form-control" type="email" ngModel name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" type="text" ngModel name="companyname" placeholder="Company Name"></div>
+                <div class="form-group"><input class="form-control" type="text" ngModel name="phone" placeholder="Phone Number"></div>
+                <div class="form-group"><input class="form-control" type="text" ngModel name="address" placeholder="Address"></div>
+                <div class="form-group"><input class="form-control" type="text" ngModel name="country" placeholder="Country"></div>
+                
+                 <div><select class = "form-control" id="size" ngModel name="size" placeholder="Company-size"> 
+                    
+                    <option value="">Company Size</option>
+                        <option value="1-5"> 5 employees</option>
+                        <option value="5-20">5 - 20 employees</option>
+                        <option value="20-50">20 - 50 employees</option>
+                        <option value="50-250">50 - 250 employees</option>
+                        <option value="250-over">> 250 employees</option>
+
+                    </select>
+                    </div>
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
+                </div>
+                <div class="form-group" (click) = "createdb(frm)" style="margin-left: 4px;"><button style="width: 100px;" class="btn btn-primary btn-block" type="submit">Create</button></div>   </form>
+        </div>
+    </div>
+ 
+
+ -->
+ <div class="header1">
+    <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;height: 45px;"><a href=""><span class="text-primary"></span> </a></h1> -->
+    <img src="assets/4-removebg-preview (1).png" height="66">
+    <div class="header">
+        <!-- <a  href="#home-section" class="nav-link" id = "header">Home</a>
+        
+        <a href="#features" class="nav-link" id="header">Features</a> -->
+        <div class="btn1">
+            <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+            <button type="button" style="    position: absolute;right: 13%; width: 7%; top: 0px;" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
+          </div>
+      
+        
+    </div>
+    </div>
+  <!-- <div style="display: flex; margin: 20px; margin-left: 40px;">
+    <h1 class="mb-0 site-logo" style="font-size: 200%; font-weight: 500;"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1>
+    <input type="image" routerLink="/profile" style="position: absolute; right: 3%; width: 4%; top: 2%;" src="https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png"/>
+  </div>   -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <button type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>CEO</button>
+      <ul>
+        <li style="background-color: lightgray; margin-bottom: 20%;" ><a class="" style="color: white;"><fa-icon class="fav" [icon]="myhome"></fa-icon>Database</a></li>
+        <!-- <li style="cursor: pointer;"><a class="" (click)="exportexcel()"><fa-icon class="fav" [icon]="exporticon"></fa-icon>Export Leads</a></li> -->
+        <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">About</a></li> -->
+      </ul>
+    </div>
+  </div>
+  
+
+ 
+
+    <div style="padding-left: 30%; background-color: white; background-image: url('assets/pexels-pixabay-268415.jpg')" class="register-photo">
+
+        <div class="form-container" style="">
+
+            <div class="image-holder"></div>
+
+            <form method="dialog" #frm="ngForm">
+
+                <h2 class="text-center"><strong>Create</strong> a Database.</h2>
+
+                <div class="form-group"><input class="form-control" type="text" ngModel name="name" placeholder={{lname}} readonly></div>
+
+                <div class="form-group"><input class="form-control" type="email" ngModel name="email" placeholder="Email"></div>
+
+                <div class="form-group"><input class="form-control" type="text" ngModel name="companyname" placeholder="Company Name"></div>
+
+                <div class="form-group"><input class="form-control" type="text" ngModel name="phone" placeholder="Phone Number"></div>
+
+                <div class="form-group"><input class="form-control" type="text" ngModel name="address" placeholder="Address"></div>
+
+                <div class="form-group"><input class="form-control" type="text" ngModel name="country" placeholder="Country"></div>
+
+              
+
+                 <div><select class = "form-control" id="size" ngModel name="size" placeholder="Company-size">
+
+                    <!-- <option selected="selected" disabled="disabled" hidden="hidden" value=""></option> -->
+
+                    <option value="">Company Size</option>
+
+                        <option value="1-5"> 5 employees</option>
+
+                        <option value="5-20">5 - 20 employees</option>
+
+                        <option value="20-50">20 - 50 employees</option>
+
+                        <option value="50-250">50 - 250 employees</option>
+
+                        <option value="250-over">> 250 employees</option>
+
+ 
+
+                    </select>
+
+                    </div>
+
+                <div class="form-group">
+
+                    <!-- <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div> -->
+
+                </div>
+
+                <div class="form-group" (click) = "createdb(frm)" style="margin-left: 4px;"><button style="width: 100px;" class="btn btn-primary btn-block" type="submit">Create</button></div>   </form>
+
+        </div>
+
+    </div>
+
+ 
+
+ 
+
+ 

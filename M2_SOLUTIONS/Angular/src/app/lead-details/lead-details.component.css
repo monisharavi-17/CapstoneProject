@@ -1,0 +1,163 @@
+.mainc{
+    padding-left:50px;
+    padding-top:50px;
+    padding-bottom: 100px;
+}
+
+p {
+    color: #0a0606;
+    font-weight: 300; }
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+  
+    #header{
+        margin:0px 0px 0px 0px;
+        font-size: 20px;
+    }
+    .flex{
+        font-size: 50px;
+        display:flex;
+        margin-left: 70px;
+        /* width: 900px; */
+        color:black;
+    }
+    #flex1{
+        color: #131212;
+        font-weight: 600;
+        width:1400px;
+        margin-right:50px;
+        margin-top:100px;
+        display:flex;
+    }
+    .box{
+      display:block;
+      width:500px;
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: 700px;
+    
+  }
+  .header1{
+    display: flex; 
+    padding-left: 4%;
+    width: 100%;
+    padding-top: 0%;
+    position: fixed;
+    background: linear-gradient(to right, rgba(36, 52, 91, 1), rgba(1, 15, 42, 1));
+    z-index: 100;
+  }
+  
+  .header{
+    display:flex;
+    margin-left: 5%;
+    /* margin-top:0.5% */
+  }
+  .cardab{
+    margin-top:7%;
+  }
+  .cardss{
+    background:linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+    width:155vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1%;
+}
+.card1{
+      margin: 6%;
+      width: 88%;
+      background-color: white;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      padding:6px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .card-text{
+    font-size: larger;
+  }
+  .card-text p{
+    color:black;
+    
+  }
+  .card-header{
+    text-align: center;
+    color:white;
+    font-size: xx-large;
+    position: absolute;
+    left:8%;
+    top:25%;
+  }
+  .changestate{
+    margin: 5%; padding:1%; display:grid; grid-gap: 10px;
+    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .changestate button{
+    background:linear-gradient(to right, rgba(36, 52, 91, 0.9), rgba(1, 15, 42, 0.9));
+  }
+  .changestate button:hover{
+    background:linear-gradient(to right, rgba(210, 212, 217, 0.9rgba(105, 109, 116, 0.9)9));
+  }
+  .hr-text {
+    border: 0;
+    font-size: 14px;
+    height: 1.5em;
+    line-height: 1em;
+    position: relative;
+    text-align: center;
+  }
+  .hr-text::before {
+    content: "";
+    background: linear-gradient(to right, transparent, rgb(10, 5, 5), transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+.hr-text::after {
+    background-color: #1a1a1a;
+    color: rgb(241, 232, 232);
+    content: attr(data-content);
+    line-height: 1.5em;
+    padding: 0 7px;
+    position: relative;
+}
+.logbox{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-right: 5%;
+    border-radius: 5%;
+}
+#button11{
+
+  margin-left: 42rem;
+
+  height: fit-content;
+
+  margin-top: 1%;
+
+  background-color: rgba(99, 135, 227, 0.9) !important;
+
+
+
+}
+
+#button11:hover{
+
+  margin-left: 42rem;
+
+  height: fit-content;
+
+  margin-top: 1%;
+
+  background-color: white !important;
+
+  color:black;
+
+
+
+}

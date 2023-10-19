@@ -1,0 +1,44 @@
+<!-- <div id="popup">
+    
+    <div id="title">
+        <h2>Generate Leads</h2>
+        <hr>
+    </div>
+    <div id="dropdown">
+        <label for="industry">Select Industries for Leads to be Generated:</label>
+        <select (change)="onChange($event)" id="industry" name="industry" style="height: 40px; width: 150px;">
+            <option>select</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Banking">Banking</option>
+            <option value="Software services">Software services</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Media">Media</option>
+            <option value="Automobile">Automobile</option>
+        </select>
+    </div>
+    <div id="button">
+        <button (click)="generate()" type="button" class="btn btn-info">Generate</button>
+    </div>
+</div> -->
+<div id="popup">
+    
+    <div id="title" style="background-image: url('assets/pexels-cátia-matos-1072179.jpg');">
+        <h2>Generate Leads</h2>
+        <hr>
+    </div>
+    <div id="dropdown">
+        <label for="industry">Select Industries for Leads to be Generated:</label>
+        <select (change)="onChange($event)" id="industry" name="industry" style="height: 40px; width: 150px;">
+            <option value=""></option>
+            <option value="consulting">Consulting</option>
+            <option value="banking">Banking</option>
+            <option value="software">Software services</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="media">Media</option>
+            <option value="automobile">Automobile</option>
+        </select>
+    </div>
+    <div id="button">
+        <button (click)="generate()" type="button" class="btn btn-info">Generate</button>
+    </div>
+</div>
