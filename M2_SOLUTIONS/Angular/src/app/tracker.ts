@@ -25,4 +25,5 @@ export class tracker{
     meetlink:any|undefined
     path:string|undefined
     reportlist:reporting[]|undefined
+    photoid:number|undefined
 }
