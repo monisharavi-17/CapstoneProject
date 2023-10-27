@@ -24,7 +24,7 @@ export class PopUpComponent //implements OnInit
   k:boolean=this.ds.t;
   constructor(private ds:DataserviceService,private dialogRef: MatDialogRef<PopUpComponent>,private router:Router,private dialogRef1: MatDialog){}
   message(data2:any){
-
+    this.ds.photoid=data2.empid
     if (data2.result == false){
       alert(data2.mess)
     } 
@@ -32,6 +32,7 @@ export class PopUpComponent //implements OnInit
     {
       alert("Admin added Successfully");
       this.ds.t=true;
+      
       this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
         this.router.navigate(['admins']);
     }); 
@@ -60,10 +61,11 @@ export class PopUpComponent //implements OnInit
   {
     var formData = new FormData();
     formData.append('file',this.userfile);
-    this.ds.savePhoto(formData).subscribe((response)=>
-    {
-      console.log(response);
-    });
+    let hello$ = this.ds.savePhoto(formData);
+    hello$.subscribe(
+        (data: any) => this.message1(data),
+        err => console.error(err)
+    );
     alert("Photo Uploaded Successfully");
     this.ds.t=false
     this.dialogRef1.closeAll();
@@ -74,6 +76,20 @@ export class PopUpComponent //implements OnInit
   });  
     
   }
+  message1(data:any){
+    this.ds.track.photoid=this.ds.photoid
+    let hello$ = this.ds.photos1(this.ds.track);
+    hello$.subscribe(
+        (data: any) => console.log(data),
+        err => console.error(err)
+    );
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+
+      this.router.navigate(['admins']);
+
+  }); 
+  }
+
   skip()
   {
     alert("Can be updated later by clicking on profile");
