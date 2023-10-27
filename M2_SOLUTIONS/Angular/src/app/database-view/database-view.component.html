@@ -1,3 +1,37 @@
+<!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="margin:0px">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="" alt="Bootstrap" width="30" height="24">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="assets\usericon.jpg" routerLink="/userprofile" alt="usericon" width="30" height="24">
+      </a>
+    </div>
+
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <h1 >Data Bases</h1>
+    <button name="button" routerLink="/createdatabase" id="button" class="btn btn-outline-dark">Create</button>
+  </nav>
+  <div id="container">
+  <ul style="list-style-type: none">
+    <li *ngFor="let j of datas ">
+        <div class="card" style="width: 18rem" >
+            <img src="assets\cmp.png" alt="..." width="100" height="100">
+            <div class="card-body">
+              <h5 class="card-title">{{j}}</h5>
+              
+              <a  class="btn btn-primary" routerLink="/admins"type="button" (click)="connecttodatabase(j)">Go to Database</a>
+              
+            </div>
+        </div>
+          
+    </li>
+    <br><br><br>
+</ul>
+</div>
+<router-outlet></router-outlet> -->
 <div class="header1">
   
   <!-- <h1 class=""  style="font-size: 200%; font-weight: 500; margin-top: 0.5%; color: white;"><a href="">M2SOLUTIONS<span class="text-primary"></span> </a></h1> -->
@@ -7,13 +41,8 @@
       
       <a href="#features" class="nav-link" id="header">Features</a> -->
       <div class="btn1">
-
-        <input type="image" routerLink="/profile" style="position: absolute; right: 3%; width: 4%; top: 7%;" src="https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png"/>
-
-        <button type="button" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
-        
-          
-          
+        <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/>
+        <button type="button" style="    position: absolute;right: 13%; width: 7%; top: 12px;" (click)="logout()" class="btn btn-primary" id="button11">LOGOUT</button>
       </div>
     
       
@@ -23,7 +52,7 @@
   <!-- vertical nav -->
   <div class="wrapper">
     <div class="sidebar">
-      <button routerLink="/profile" type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>CEO</button>
+      <button routerLink="/userprofile" type="button"><fa-icon class="fav" [icon]="snow"></fa-icon>CEO</button>
       <ul>
         <li style="background-color: lightgray;"><a class="" style="color: white;"><fa-icon class="fav" [icon]="myhome"></fa-icon>Databases</a></li>
         <!-- <li><a href="">Admin<i class="fa-light fa-lock" style="color: #f1f5f8;"></i></a></li>

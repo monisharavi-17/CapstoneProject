@@ -125,22 +125,27 @@ export class AdminslistComponent {
   datas:string[]=[];
   empids:number[]=[]
   s:any="";
+  paths:string[]=[]
+  datafind:any[]=[]
   message(data2:any){
     console.log(data2)
-    
+      
       for(let index in data2){
         if(data2[index].emprole=="Admin"){
           this.datas.push(data2[index].empname)
           this.empids.push(data2[index].empid)
+          this.paths.push(data2[index].path)
+          this.datafind.push(data2[index])
         }
-        if(this.datas.length==0)
+      }
+        if(this.datafind.length==0)
       {
         this.s="There are no admins! Please add an Admin!"
       }
       else{
         this.admintext="All Admins";
         this.lenofdatas=true;
-      }
+      
       }
       console.log(this.datas);
       console.log(this.empids)

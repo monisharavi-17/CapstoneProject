@@ -160,7 +160,7 @@
       
         
           <router-outlet></router-outlet> -->
-          <div class="flexcontent" style="background-image: url('assets/pexels-pixabay-268415.jpg')">
+          <div class="flexcontent" style="background-image: url('assets/pexels-pixabay-268415.jpg');height: 100rem;">
            <!-- <div class="aboutcompany">
               <div class="forbackground">
       
@@ -188,14 +188,15 @@
               <div id="wholecard" style="background-image: url('assets/pexels-fwstudio-172289.jpg')">
                 
                 <h1 style="">{{s}}</h1>
-                <div id="cardsabove" *ngFor="let i of datas ">
+                <div id="cardsabove" *ngFor="let i of datafind ">
                   <div class="card" id="super1" >
-                    <img id="super1image" src="https://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/128/Profile-icon.png" width="128" height="128">
-                    
+                    <img id="super1image" src="{{i.path}}" onerror="this.src='https:/icons.iconarchive.com/icons/elegantthemes/beautiful-flat/128/Profile-icon.png';" width="128" height="128">
+                    <!-- <input type="image" style="position: absolute; right: 3%; width: 4%; top: 7%; border-radius: 40%;" src="{{filepath}}" onerror="this.src='https:/icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/128/User-icon.png';"/> -->
+                    <!-- <p>{{i.path}}</p> -->
                     <div id="superbutton">
-                      <a (click)="admindetailspop(i)">{{i}}</a>
+                      <a (click)="admindetailspop(i)">{{i.empname}}</a>
                     </div>
-                    <a id="superbutton1" routerLink="/adminteams" (click)="gototeams(i)" class="btn btn-primary">View Teams</a>
+                    <a id="superbutton1" routerLink="/adminteams" (click)="gototeams(i.empname)" class="btn btn-primary">View Teams</a>
                     
                   </div>
                 </div>

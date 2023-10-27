@@ -14,8 +14,9 @@ export class AddsalespersonComponent {
 
   salesteam:any="";
   k=this.ds.t1;
- 
+  
    constructor(private ds:DataserviceService,private dialogRef: MatDialogRef<AddsalespersonComponent>,private router:Router,private dialogRef1:MatDialog){
+    
     let hello$ = this.ds.connecttoteams(this.ds.track);
         hello$.subscribe(
             // (data: any) => (this.k=data.result)?alert("Sign Up Successfull"):alert(data.mess),
@@ -50,11 +51,14 @@ export class AddsalespersonComponent {
   {
     var formData = new FormData();
     formData.append('file',this.userfile);
-    this.ds.savePhoto(formData).subscribe((response)=>
-    {
-      console.log(response);
-    });
+    this.ds.track.photoid=this.ds.photoid
+    let hello$ = this.ds.savePhoto(formData);
+    hello$.subscribe(
+        (data: any) => this.message2(data),
+        err => console.error(err)
+    );
     alert("Photo Uploaded Successfully");
+    this.ds.t1=false
     this.dialogRef1.closeAll();
        this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
   
@@ -62,6 +66,14 @@ export class AddsalespersonComponent {
   
     });
     
+  }
+  message2(data:any){
+    this.ds.track.photoid=this.ds.photoid
+    let hello$ = this.ds.photos1(this.ds.track);
+    hello$.subscribe(
+        (data: any) => console.log(data),
+        err => console.error(err)
+    );
   }
   skip()
   {
@@ -83,7 +95,7 @@ export class AddsalespersonComponent {
       console.log(this.salesteam)
   }
   message(data2:any){
-
+    this.ds.photoid=data2.empid
     if (data2.result == false){
       alert(data2.mess)
     } 
